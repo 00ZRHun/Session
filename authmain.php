@@ -8,7 +8,8 @@ if (isset($_POST['userid']) && isset($_POST['password']))
   $password = $_POST['password'];
 
   // $db_conn = new mysqli('localhost', 'webauth', 'webauth', 'auth');
-  $db_conn = new mysqli('localhost', 'zrhun', '#Hun8210#Hun8210', 'publications');
+  $db_conn = new mysqli('localhost', 'zrhun', '#Hun8201#Hun8201', 'publications');
+  // $db_conn = new mysqli('localhost', 'root', '', 'publications');
 
   if (mysqli_connect_errno()) {
    echo 'Connection to database failed:'.mysqli_connect_error();

@@ -1,9 +1,18 @@
 <?php
+// Deleting Sessions
+  // Must start the session first:
   session_start();
   
-  // store to test if they *were* logged in
-  $old_user = $_SESSION['valid_user'];  
+    // store to test if they *were* logged in
+    $old_user = $_SESSION['valid_user'];
+
+  // Remove a single variable:
   unset($_SESSION['valid_user']);
+
+  // Clear all the variables:
+  $_SESSION = array();
+
+  // Clear the stored data:
   session_destroy();
 ?>
 <html>
